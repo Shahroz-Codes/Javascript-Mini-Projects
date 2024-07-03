@@ -39,7 +39,7 @@ nav a[aria-current='page'] {
   font-style: oblique;
 }
 
-.CreateTask-btn {
+.CreateTaskbtn {
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
@@ -50,7 +50,30 @@ nav a[aria-current='page'] {
   color: #000;
 }
 
-.CreateTask-btn:hover {
+.CreateTaskbtn:hover {
+  cursor: pointer;
+  background-color: beige;
+  transition: .5s;
+}
+
+.CreationPane {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.CreationPane button {
+  min-width: 4rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: solid 1px rgb(22, 22, 22);
+  text-align: center;
+  background-color: rgb(135, 206, 235);
+  color: #000;
+}
+
+.CreationPane button:hover {
   cursor: pointer;
   background-color: beige;
   transition: .5s;
