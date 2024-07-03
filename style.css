@@ -20,11 +20,16 @@ main{
   font-weight: 600;
   font-style: oblique;
 }
-
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
 a{
     background-color: rgba(215, 213, 211, 0.475);
     border-radius: 10px;
     padding: 5px 10px;
+    
     text-decoration: none;
     color: aliceblue;
 }
