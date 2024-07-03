@@ -1,35 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     padding: 10px;
     background-color: #212121;
     color: aliceblue;
 }
-main{
+
+main {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    row-gap: 2rem;
     align-items: center;
 }
-.title{
-    padding: 10px;
-    font-size: 20px;
+
+.title {
+    border-bottom: 2px solid ;
+    font-size: 35px;
     font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: oblique;
+    font-weight: 500;
 }
-.list{
+
+.list {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
-a{
-    background-color: rgba(215, 213, 211, 0.475);
+
+a {
+    background-color: rgba(215, 213, 211, 0.959);
     border-radius: 10px;
     padding: 5px 10px;
-    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
