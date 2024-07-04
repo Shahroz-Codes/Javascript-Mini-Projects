@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #d7caca17;
 }
 
 
@@ -41,8 +42,8 @@ nav a[aria-current='page'] {
 
 .CreateTaskbtn {
   display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
+  min-width: 8rem;
+  padding: 5px;
   border-radius: 10px;
   border: solid 1px rgb(22, 22, 22);
   text-align: center;
@@ -60,12 +61,21 @@ nav a[aria-current='page'] {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 10px 15px;
+  background-color: #ebcdcd89;
 
 }
 
-.CreationPane button {
-  min-width: 4rem;
-  padding: 0.5rem;
+.CreationPane div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 10px 15px;
+}
+
+.CreationPane button,
+.listofTasks button {
+  padding: 5px 10px;
   border-radius: 10px;
   border: solid 1px rgb(22, 22, 22);
   text-align: center;
@@ -73,8 +83,57 @@ nav a[aria-current='page'] {
   color: #000;
 }
 
-.CreationPane button:hover {
+.CreationPane button:hover,
+.listofTasks button:hover {
   cursor: pointer;
   background-color: beige;
   transition: .5s;
+}
+
+main {
+  padding: 0px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: .4rem;
+}
+
+.tasks {
+  background-color: #d7caca69;
+  border-radius: 4px;
+  padding-bottom: 10px;
+}
+
+.tasks h1 {
+  padding: 10px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listofTasks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0px 10px;
+  row-gap: 0.5rem;
+}
+
+.listofTasks li {
+  list-style-type: none;
+}
+
+.listofTasks div {
+  border-radius: 4px;
+  background-color: #d4d4d4;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  gap: .5rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.liitem input:checked+label {
+  text-decoration: line-through;
 }
