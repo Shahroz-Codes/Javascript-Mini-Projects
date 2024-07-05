@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav a {
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid 1px rgb(22, 22, 22);
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(135, 206, 235);
+    color: #000;
+}
+
+nav a[aria-current='page'] {
+    color: #000;
+    background-color: #d4d4d4;
+}
+
+.GameContainer {
+    background-image: url(/Snake-Game/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GameBoard {
+   background: linear-gradient(blue,skyblue);
+   height: 92vmin;
+   width: 90vmin;
+
+}
