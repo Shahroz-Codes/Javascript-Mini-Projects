@@ -29,7 +29,7 @@ nav a[aria-current='page'] {
 }
 
 .GameContainer {
-    background-image: url('assets/bg.jpg');
+    background-image: url('/Snake-Game/assets/bg.jpg');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     height: 100vh;
